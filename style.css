@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+header {
+  width: 100%;
+  background-color: #c1002b;
+  color: white;
+  padding-bottom: 1.5rem;
+}
+h1,
+h2 {
+  display: flex;
+  padding: 1rem 0 0 0;
+  justify-content: center;
+}
+h2 {
+  font-weight: 100;
+  font-size: 1em;
+  letter-spacing: 0.1em;
+}
+
+#cover-image {
+  width: 20vw;
+  padding: 1rem;
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+.border {
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #e75474;
+  width: 30vw;
+  margin-top: 1rem;
+}
+
+#subscribe-link:hover {
+  background-color: #cf244c;
+}
+
+#subscribe-link {
+  border-radius: 4px;
+  background-color: #c1002b;
+  color: white;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
+  width: 25vw;
+  height: 7vh;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+.prices {
+  padding: 1rem;
+  margin: 1rem;
+  color: black;
+  text-align: center;
+  background-color: #ebf6fd;
+  width: 100%;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.previous-price {
+  color: green;
+  font-weight: 900;
+}
+.top-price {
+  font-size: 1.5em;
+  font-weight: 800;
+  padding-bottom: 0.2em;
+}
+
+.subscription-benefits {
+  color: rgb(71, 71, 71);
+  margin: 1em;
+}
+#orders-text {
+  margin: 1em;
+  font-style: italic;
+  color: rgb(92, 91, 91);
+}
+
+#new-statesman-bold-text {
+  padding: 0 0.3em;
+  font-weight: 900;
+  font-size: 1.2em;
+  line-height: 1em;
+  font-style: italic;
+}
+#discount {
+  color: rgb(92, 92, 92);
+}
+/* ----- PHONES ----- */
+
+@media only screen and (max-width: 728px) {
+  .border {
+    width: 90vw;
+  }
+  #subscribe-link {
+    width: 60vw;
+  }
+  h2 {
+    display: block;
+  }
+  header {
+    padding: 2em;
+    text-align: center;
+  }
+  #new-statesman-bold-text {
+    padding: 0;
+  }
+}
+
+/* ----- IPADS/TABLETS ----- */
+
+@media only screen and (min-width: 728px) and (max-width: 1024px) {
+  .border {
+    width: 90vw;
+  }
+  #subscribe-link {
+    width: 40vw;
+  }
+  h2 {
+    display: block;
+  }
+  header {
+    padding: 2em 2em;
+    text-align: center;
+  }
+  #new-statesman-bold-text {
+    padding: 0;
+  }
+}
